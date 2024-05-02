@@ -54,5 +54,16 @@ let questions=[
             "c) Web browser",
             "d) Web matrix"
         ]
+    },
+    {
+        numb:6,
+        question:"Among the given statements, which statement defines closures in JavaScript?",
+        answer:"b) JavaScript is a function that is enclosed with references to its lexical environment",
+        options: [
+            "a) JavaScript is a function that is enclosed with references to its inner function scope",
+            "b) JavaScript is a function that is enclosed with references to its lexical environment",
+            "c) JavaScript is a function that is enclosed with the object to its inner function scope",
+            "d) None of the mentioned"
+        ]
     }
 ]

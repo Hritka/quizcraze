@@ -1,96 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>About Our Quiz Platform</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        .team-members {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .team-member {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20%;
-        }
+      .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+  }
+  .logo {
+      font-size: 32px;
+      color: white;
+      font-weight: 700;
+      filter: drop-shadow(0 0 5px black);
+  }
+  
+  .navbar a {
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      margin-left: 35px;
+      transition: .3s;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+      color: red;
+  
+  }
+  
     </style>
+  <link
+  href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+  rel="stylesheet" />
+
 </head>
-<body>
 
-<header>
-    <h1>About Our Quiz Platform</h1>
-    <p>Welcome to our interactive quiz platform! Test your knowledge on various topics and compete with friends to see who scores the highest.</p>
-</header>
+<body style="background: white;">
 
-<main>
-    <section id="mission">
-        <h2>Our Mission</h2>
-        <p>Our platform is designed to provide a fun and educational experience. We aim to make learning enjoyable and engaging through quizzes and games.</p>
-        <button onclick="toggleMoreInfo()">Learn More</button>
-        <div id="more-info" class="hidden">
-            <p>Whether you're a student, a professional, or just someone who loves trivia, our platform offers quizzes on a wide range of topics, from science to pop culture.
-              Our platform is designed to make learning fun and interactive, offering a variety of quizzes across topics like science, technology, history, and pop culture. With daily quizzes and special events, you can challenge yourself, compete with friends on our leaderboards, and earn rewards and badges as you progress. Each quiz provides detailed explanations for correct answers, helping you learn while you play. Customize your experience by selecting your favorite topics and difficulty levels, and unlock exclusive content as you advance. Whether you're a casual trivia fan or a dedicated quiz enthusiast, our platform has something for everyone. Join our community and test your knowledge today!
-            </p>
+  <header class="header" style="background: black;">
+    <a href="#" class="logo">QuizCraze</a>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 my-12">
+    <div class="flex flex-col lg:flex-row justify-between gap-8">
+        <div class="w-full lg:w-5/12 flex flex-col justify-center">
+            <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-white pb-4">About Us</h1>
+            <p class="font-normal text-base leading-6 text-gray-600 dark:text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from</p>
         </div>
-    </section>
+        <div class="w-full lg:w-8/12">
+            <img class="w-full h-full" src="https://i.ibb.co/FhgPJt8/Rectangle-116.png" alt="A group of People" />
+        </div>
+    </div>
 
-    
-</main>
+   
+</div>
 
-<footer>
-    <p>&copy; 2024 Our Quiz Platform. All rights reserved.</p>
+
+<footer class="bg-zinc-50 text-center dark:bg-neutral-700 lg:text-left">
+  <div class="bg-black/5 p-4 text-center text-surface dark:text-white">
+      &copy; 2024 Our Quiz Platform. All rights reserved
+  </div>
 </footer>
 
-<script>
-function toggleMoreInfo() {
-    const moreInfo = document.getElementById("more-info");
-    if (moreInfo.classList.contains("hidden")) {
-        moreInfo.classList.remove("hidden");
-    } else {
-        moreInfo.classList.add("hidden");
-    }
-}
-</script>
+
 
 </body>
 </html>
